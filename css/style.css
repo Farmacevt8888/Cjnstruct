@@ -173,6 +173,10 @@ a {
 }
 
 @media (max-width: 767px) {
+  body {
+    padding: 2px;
+  }
+
   .container {
     max-width: 500px;
   }
