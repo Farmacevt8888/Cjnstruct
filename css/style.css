@@ -67,39 +67,169 @@ a {
   margin: 0 auto;
 }
 
+/* media ========================================= */
 @media (max-width: 1200px) {
   .container {
     max-width: 941px;
   }
+
+  .btn {
+    background: #00a4e5;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s linear;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+  .capabilities__btn {
+    padding: 11px 29px;
+  }
+
+  .connection__btn {
+    padding: 11px 26px;
+  }
+
+  .signup__btn {
+    padding: 11px 50px;
+  }
+
+  .capabilities__subtitle {
+    margin: 0px 31px 0px 0px;
+    max-width: 405px;
+  }
+
+  .capabilities__title {
+    margin-right: 155px;
+  }
+  .servises__content {
+    margin-right: 28px;
+  }
+
+  .footer__info {
+    flex-wrap: wrap;
+  }
+
+  .company {
+    flex: 0 1 33.333%;
+  }
+
+  .links {
+    flex: 0 1 33.333%;
+  }
+
+  .contacts {
+    flex: 0 1 33.333%;
+  }
+
+  .networks {
+    flex: 0 1 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .signup__input input {
+    min-width: 250px;
+    min-height: 40px;
+  }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
+  body {
+    padding: 5px;
+  }
+
   .container {
     max-width: 750px;
   }
+
   .capabilities__btn {
-    padding: 2px 5px;
-  }
-  .btn {
+    padding: 9px 20px;
     font-size: 10px;
+    line-height: 12px;
+  }
+
+  .connection__btn {
+    padding: 8px 18px;
+  }
+
+  .signup__btn {
+    padding: 8px 40px;
+  }
+
+  .capabilities__subtitle {
+    margin-right: 25px;
+    max-width: 300px;
+  }
+
+  .capabilities__title {
+    margin-right: 100px;
+  }
+
+  .signup__input input {
+    min-width: 250px;
+    min-height: 34px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
-    max-width: none;
+    max-width: 500px;
+  }
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .we {
+    min-width: 80px;
+  }
+  .capabilities {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .capabilities__title {
+    margin: 0;
+  }
+
+  .capabilities__btn {
+    margin-top: 10px;
+    padding: 9px 20px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .servises__content {
+    margin-right: 8px;
+  }
+
+  .footer__info {
+    flex-wrap: wrap;
+  }
+
+  .company {
+    flex: 0 1 33.333%;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .contacts {
+    flex: 0 1 33.333%;
+  }
+
+  .networks {
+    flex: 0 1 100%;
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
-.btn {
-  background: #00a4e5;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: 700;
-  transition: 0.3s linear;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-}
+/* =============================================== */
 
 .btn:hover {
   background: #038ec5;
@@ -215,23 +345,6 @@ a {
   margin-bottom: 118px;
 }
 
-@media (max-width: 720px) {
-  .content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .we {
-    min-width: 80px;
-  }
-  .capabilities {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-}
-
 .content__title {
   text-align: center;
   text-align: center;
@@ -310,7 +423,6 @@ a {
   line-height: 25px;
   letter-spacing: 2.30625px;
   text-transform: uppercase;
-  margin-right: 155px;
 }
 
 .capabilities__title::after {
@@ -326,12 +438,9 @@ a {
   font-size: 11px;
   line-height: 19px;
   letter-spacing: 0.2px;
-  margin-right: 31px;
-  max-width: 405px;
   width: 100%;
 }
 .capabilities__btn {
-  padding: 11px 29px;
   max-width: 150px;
   max-height: 40px;
   text-align: center;
@@ -348,7 +457,6 @@ a {
   /* flex: 0 1 33.333%; */
   padding: 38px 23px;
   border: 1px solid #e6e6e6;
-  margin-right: 28px;
 }
 
 .servises__content:last-child {
@@ -393,7 +501,6 @@ a {
   margin-bottom: 35px;
 }
 .connection__btn {
-  padding: 11px 26px;
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 92px;
@@ -423,13 +530,10 @@ a {
 
 .signup__input input {
   border: 1px solid #979797;
-  min-width: 250px;
-  min-height: 40px;
   margin-right: -4px;
 }
 
 .signup__btn {
-  padding: 11px 50px;
   margin: 0;
 }
 
@@ -454,30 +558,9 @@ a {
   justify-content: space-between;
 }
 
-@media (max-width: 1200px) {
-  .footer__info {
-    flex-wrap: wrap;
-  }
-  .company {
-    flex: 0 1 33.333%;
-  }
-  .links {
-    flex: 0 1 33.333%;
-  }
-  .contacts {
-    flex: 0 1 33.333%;
-  }
-  .networks {
-    flex: 0 1 100%;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-}
-
 .company {
   margin: auto;
 }
-
 
 .company__logo img {
   max-width: 102px;
