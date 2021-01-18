@@ -82,6 +82,14 @@ a {
     font-size: 13px;
     letter-spacing: 0.5px;
   }
+  .intro__title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .intro__subtitle {
+    font-size: 16px;
+  }
+
   .capabilities__btn {
     padding: 11px 29px;
   }
@@ -132,16 +140,29 @@ a {
     min-width: 250px;
     min-height: 40px;
   }
+
+  .signup__title {
+    margin-right: 70px;
+  }
 }
 
 @media (max-width: 950px) {
   body {
-    padding: 5px;
+    padding: 0px 5px;
   }
 
   .container {
     max-width: 750px;
   }
+
+  .intro__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .intro__subtitle {
+    font-size: 14px;
+  }
+
 
   .capabilities__btn {
     padding: 9px 20px;
@@ -170,24 +191,40 @@ a {
     min-width: 250px;
     min-height: 34px;
   }
+
+  .signup__title {
+    margin-right: 50px;
+  
+  }
 }
 
 @media (max-width: 767px) {
   body {
-    padding: 2px;
+    padding: 0px 2px;
   }
 
   .container {
     max-width: 500px;
   }
+
+  .intro__title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .intro__subtitle {
+    font-size: 12px;
+  }
+
   .content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .we {
     min-width: 80px;
   }
+
   .capabilities {
     flex-direction: column;
     justify-content: center;
@@ -231,6 +268,21 @@ a {
     justify-content: center;
     margin-bottom: 50px;
   }
+
+  .signup__input input {
+    min-width: 200px;
+    min-height: 25px;
+  }
+
+  .signup__btn {
+    padding: 4px 25px;
+}
+
+.signup__title {
+  margin-right: 25px;
+
+}
+
 }
 
 /* =============================================== */
@@ -268,15 +320,11 @@ a {
 
 .intro__title {
   font-family: BebasNeueBold;
-  font-size: 60px;
-  line-height: 70px;
   letter-spacing: 5.70937px;
 }
 
 .intro__subtitle {
   font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
 }
 
 .intro__btn {
@@ -526,7 +574,6 @@ a {
   line-height: 30px;
   letter-spacing: 0.846154px;
   color: #ffffff;
-  margin-right: 70px;
 }
 .signup__input {
   margin: 0;
